@@ -1,0 +1,8 @@
+# local mongodb docker-compose setup - in case  
+version: '3.3'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - '27017:27017'
