@@ -1,16 +1,8 @@
 import express from "express";
-import {
-  getUser,
-  getUsers,
-  updateUser,
-  deleteUser,
-} from "./controllers";
+import { getUser } from "./controllers";
 
 const router = express.Router();
-
+// localhost:3001/users
 router.get("/:userId", getUser);
-router.get("/", getUsers);
-router.put("/:userId", updateUser);
-router.delete("/:userId", deleteUser);
 
 export default router;

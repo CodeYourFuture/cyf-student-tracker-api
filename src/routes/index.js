@@ -1,2 +1,3 @@
 import users from "./users/routes";
-export { users };
+import students from "./students/routes";
+export { users, students };
