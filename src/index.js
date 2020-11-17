@@ -3,7 +3,7 @@ import cors from "cors";
 import * as dotenv from "dotenv";
 dotenv.config();
 // import new routes from routes
-import { users, students } from "./routes";
+import { users, students, auth} from "./routes";
 export let server;
 export async function startAPI() {
   const app = express()
@@ -12,7 +12,9 @@ export async function startAPI() {
     // localhost:3001
     .get("/", (reg, res) => res.sendStatus(200))
     .use("/users", users)
-    .use("/students", students);
+    .use("/students", students)
+    .use("/auth", auth);
+    
     // new routes should be imported and add like below
     // .use("/example", example);
   server = app.listen(3001, () =>
