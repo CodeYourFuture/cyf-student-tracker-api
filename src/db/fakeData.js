@@ -177,8 +177,8 @@ export const users = [
       week1: null,
       week2: null,
       week3: null
-    },
-    studentScore: 0
+    }
+   
   },
 
   
