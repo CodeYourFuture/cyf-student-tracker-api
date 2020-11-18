@@ -1,4 +1,4 @@
-import {studentProfile, studentProgressTracker} from '../../db/fakeData';
+import {studentProfile, studentProgressTracker, pdSkillsPostData} from '../../db/fakeData';
 export const studentTracker = async (req, res) => {
   try {
     return res
@@ -22,5 +22,20 @@ export const getStudentProfile = async (req, res) => {
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
+  }
+};
+
+export const postPdSkills = async (req, res) => {
+  try {
+    let myPdPost = req.body;
+    !myPdPost.profile ? res.send('invalid data schema, need to add profile within POST!') : (pdSkillsPostData.push(myPdPost), res.status(200).json(myPdPost));
+    
+    
+   
+  
+    
+  } catch (err) {
+    console.log(err);
+    return res.status(400).send("Could not get students Pd skills data");
   }
 };
