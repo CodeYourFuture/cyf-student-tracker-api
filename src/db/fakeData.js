@@ -31,117 +31,260 @@ export const users = [
           classessLate: [1,2,3,4,5,6,7,8,9,10]
         },
       eduHomework: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          studentScore: [1,2,3,4,5,6,7,8,9,10]
-      },
-      classAttendance: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          attended: ['yes', 'no', 'late']
+         javascript1: {
+           week1: null,
+           week2: null,
+           week3: null
+         },
+         javascript2: {
+          week1: null,
+          week2: null,
+          week3: null
         },
-      pdSkills: {
-          skill: ["motivation", "communication", "confidence"],
-          skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
+        javascript3: {
+          week1: null,
+          week2: null,
+          week3: null
+        },
+        studentScore: 0
+      },
+
+      
+      classAttendance: {
+        javascript1: {
+          week1: null,
+          week2: null,
+          week3: null
+        },
+        javascript2: {
+         week1: null,
+         week2: null,
+         week3: null
+       },
+       javascript3: {
+         week1: null,
+         week2: null,
+         week3: null
+       },
+         
+     
       }
     },
+
     {
-        profile:2,
-        studentInfo: {
-              name: "Dennis",
-              location: "Birmingham",
-              email: "dennis123@yahoo.com",
-              phone: "07771112223",
-              slackId: "denis321"
-  
-      },
-      overview: {
-          homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-          homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-          classessAttended: [1,2,3,4,5,6,7,8,9,10],
-          classessLate: [1,2,3,4,5,6,7,8,9,10]
-        },
-      eduHomework: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          studentScore: [1,2,3,4,5,6,7,8,9,10]
-      },
-      classAttendance: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          attended: ['yes', 'no', 'late']
-        },
-      pdSkills: {
-          skill: ["motivation", "communication", "confidence"],
-          skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-      }
+      profile: 2,
+      studentInfo: {
+            name: "lola",
+            location: "Birmingham",
+            email: "lola123@yahoo.com",
+            phone: "07771112223",
+            slackId: "lola321"
+
     },
-    {
-        profile:3,
-        studentInfo: {
-              name: "lola",
-              location: "Birmingham",
-              email: "lola123@yahoo.com",
-              phone: "07771112223",
-              slackId: "lola321"
-  
+     overview: {
+        homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
+        homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
+        classessAttended: [1,2,3,4,5,6,7,8,9,10],
+        classessLate: [1,2,3,4,5,6,7,8,9,10]
       },
-      overview: {
-          homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-          homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-          classessAttended: [1,2,3,4,5,6,7,8,9,10],
-          classessLate: [1,2,3,4,5,6,7,8,9,10]
-        },
-      eduHomework: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          studentScore: [1,2,3,4,5,6,7,8,9,10]
+    eduHomework: {
+       javascript1: {
+         week1: null,
+         week2: null,
+         week3: null
+       },
+       javascript2: {
+        week1: null,
+        week2: null,
+        week3: null
       },
-      classAttendance: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          attended: ['yes', 'no', 'late']
+      javascript3: {
+        week1: null,
+        week2: null,
+        week3: null
+      },
+      studentScore: 0
+    },
+
+    
+    classAttendance: {
+      javascript1: {
+        week1: null,
+        week2: null,
+        week3: null
+      },
+      javascript2: {
+       week1: null,
+       week2: null,
+       week3: null
+     },
+     javascript3: {
+       week1: null,
+       week2: null,
+       week3: null
+     },
+       
+     attended: {
+      0: 'yes', 
+      1: 'no', 
+      2: 'late'
+  }
+      },
+    pdSkills: {
+        skill: {
+          0: "motivation", 
+          1: "communication", 
+          2:"confidence"
         },
-      pdSkills: {
-          skill: ["motivation", "communication", "confidence"],
-          skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-      }
+        skillLevel: {
+          0: "Excellent", 
+          1: "Very good", 
+          2: "Average", 
+          3: "Below Average", 
+          4: "Poor"
+        }
     }
+  },
+
+  {
+    profile: 3,
+    studentInfo: {
+          name: "denis",
+          location: "Birmingham",
+          email: "denis123@yahoo.com",
+          phone: "07771112223",
+          slackId: "denis321"
+
+  },
+   overview: {
+      homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
+      homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
+      classessAttended: [1,2,3,4,5,6,7,8,9,10],
+      classessLate: [1,2,3,4,5,6,7,8,9,10]
+    },
+  eduHomework: {
+     javascript1: {
+       week1: null,
+       week2: null,
+       week3: null
+     },
+     javascript2: {
+      week1: null,
+      week2: null,
+      week3: null
+    },
+    javascript3: {
+      week1: null,
+      week2: null,
+      week3: null
+    },
+    studentScore: 0
+  },
+
+  
+  classAttendance: {
+    javascript1: {
+      week1: null,
+      week2: null,
+      week3: null
+    },
+    javascript2: {
+     week1: null,
+     week2: null,
+     week3: null
+   },
+   javascript3: {
+     week1: null,
+     week2: null,
+     week3: null
+   },
+     
+   attended: {
+    0: 'yes', 
+    1: 'no', 
+    2: 'late'
+}
+    },
+
+   
+  pdSkills: {
+      skill: ["motivation", "communication", "confidence"],
+      skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
+  }
+}
+    
     
   ]
   //route for /student-tracker
    export const studentProgressTracker = [
+
     {
-        overview: {
-          homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-          homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-          classessAttended: [1,2,3,4,5,6,7,8,9,10],
-          classessLate: [1,2,3,4,5,6,7,8,9,10]
+          overview: {
+            homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
+            homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
+            classessAttended: [1,2,3,4,5,6,7,8,9,10],
+            classessLate: [1,2,3,4,5,6,7,8,9,10]
+          }
+      },
+      {
+          eduHomework: {
+            javascript1: {
+              week1: null,
+              week2: null,
+              week3: null
+            },
+            javascript2: {
+             week1: null,
+             week2: null,
+             week3: null
+           },
+           javascript3: {
+             week1: null,
+             week2: null,
+             week3: null
+           },
+           studentScore: 0
         }
-    },
-    {
-        eduHomework: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          studentScore: [1,2,3,4,5,6,7,8,9,10]
-      }
-    },
-    {
-        pdSkills: {
-          skill: ["motivation", "communication", "confidence"],
-          skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-      }
-    },
-    
-    {
-        classAttendance: {
-          module: ['Javascript1', 'Javascript2', 'Javascript3', 'Html1', 'Html2', 'Html3', 'React1', 'React2', 'React3'],
-          week: ['week1', 'week2', 'week3'],
-          attended: ['yes', 'no', 'late']
+      },
+      {
+          pdSkills: {
+            skill: ["motivation", "communication", "confidence"],
+            skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
         }
-    },
-   
+      },
+      
+      {
+          classAttendance: {
+            javascript1: {
+              week1: null,
+              week2: null,
+              week3: null
+            },
+            javascript2: {
+             week1: null,
+             week2: null,
+             week3: null
+           },
+           javascript3: {
+             week1: null,
+             week2: null,
+             week3: null
+           },
+             
+            attended: {
+              0: 'yes', 
+              1: 'no', 
+              2: 'late'
+          }
+          }
+      },
+      
+      
+      {laptop: "laptop details here"}
+
     
-    {laptop: "laptop details here"}
   ];
   
+
+
+ 
