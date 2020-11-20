@@ -24,3 +24,14 @@ export const getStudentProfile = async (req, res) => {
     return res.status(400).send("Could not get students");
   }
 };
+
+export const postClassAttendanceData = async (req, res) => {
+  try {
+    let classAttendancePost = req.body;
+  
+    
+  } catch (err) {
+    console.log(err);
+    return res.status(400).send("Could not get students");
+  }
+};
