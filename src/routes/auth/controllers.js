@@ -2,11 +2,11 @@ import {users} from '../../db/fakeData';
 export const login = async (req, res) => {
  
   try {
-    let myPost = req.body;
-    let authenticated =  users.find(e => e.userName === myPost.userName);
+    let postBody = req.body;
+    let authenticated =  users.find(e => e.userName === postBody.userName);
     !authenticated ? res.json({success: false}): res.json({
       success: true,
-      user: myPost.userName,
+      user: postBody.userName,
     });
     
     
