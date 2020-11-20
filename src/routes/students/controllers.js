@@ -1,4 +1,4 @@
-import {studentProfile, studentProgressTracker} from '../../db/fakeData';
+import {classAttendanceArray, studentProfile, studentProgressTracker} from '../../db/fakeData';
 export const studentTracker = async (req, res) => {
   try {
     return res
@@ -28,6 +28,8 @@ export const getStudentProfile = async (req, res) => {
 export const postClassAttendanceData = async (req, res) => {
   try {
     let classAttendancePost = req.body;
+    classAttendanceArray.push(classAttendancePost);
+    res.json(classAttendancePost);
   
     
   } catch (err) {

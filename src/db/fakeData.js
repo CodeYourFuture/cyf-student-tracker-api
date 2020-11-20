@@ -287,4 +287,4 @@ export const users = [
   
 
 
- 
+export const classAttendanceArray = []; 

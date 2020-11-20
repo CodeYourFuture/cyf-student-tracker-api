@@ -2,7 +2,8 @@ import express from "express";
 
 import {
   studentTracker,
-  getStudentProfile
+  getStudentProfile,
+  postClassAttendanceData
 } from "./controllers";
 
 const router = express.Router();
