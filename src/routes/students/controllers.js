@@ -17,8 +17,6 @@ export const getStudentProfile = async (req, res) => {
     filteredProfile ?  res
     .status(200)
     .send(filteredProfile) : res.json({success: false});
-  
-    
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -30,8 +28,6 @@ export const postClassAttendanceData = async (req, res) => {
     let classAttendancePost = req.body;
     classAttendanceArray.push(classAttendancePost);
     res.json(classAttendancePost);
-  
-    
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
