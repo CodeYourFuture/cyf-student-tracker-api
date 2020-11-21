@@ -37,13 +37,11 @@ export const postPdSkills = async (req, res) => {
 export const postStudentEduHomework = async (req, res) => {
   try {
     const eduHomeworkBody = req.body;
-    // res.json(eduHomeworkBody[0]);
     const findProfile = studentProfile.findIndex(
       (profile) => profile.profile == eduHomeworkBody.studentId
     );
 
     studentProfile[findProfile].eduHomework = eduHomeworkBody.eduHomework;
-    // res.json(studentProfile[findProfile]);
     console.log(eduHomeworkBody);
 
     eduHomeworkBody
@@ -55,5 +53,4 @@ export const postStudentEduHomework = async (req, res) => {
     res.status(400).send("Error adding homework!");
   }
 };
-
 

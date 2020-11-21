@@ -13,6 +13,6 @@ const router = express.Router();
 router.get("/tracker", studentTracker);
 router.get("/profile/:profile_id", getStudentProfile);
 router.post("/pd_skills", postPdSkills);
-router.post("/student/edu_homework", postStudentEduHomework);
+router.post("/edu_homework", postStudentEduHomework);
 
 export default router;
