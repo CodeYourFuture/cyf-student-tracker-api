@@ -14,6 +14,7 @@ export async function startAPI() {
     .use("/users", users)
     .use("/students", students)
     .use("/auth", auth);
+  
     
     // new routes should be imported and add like below
     // .use("/example", example);

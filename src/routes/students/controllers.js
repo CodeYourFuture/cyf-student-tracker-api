@@ -43,7 +43,7 @@ export const postStudentEduHomework = async (req, res) => {
     );
 
     studentProfile[findProfile].eduHomework = eduHomeworkBody.eduHomework;
-    res.json(studentProfile[findProfile]);
+    // res.json(studentProfile[findProfile]);
     console.log(eduHomeworkBody);
 
     eduHomeworkBody
