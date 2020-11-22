@@ -289,4 +289,4 @@ export const pdSkillsPostData = [];
 
 export const eduHomeworkData = [];
 
- 
+export const classAttendanceArray = []; 

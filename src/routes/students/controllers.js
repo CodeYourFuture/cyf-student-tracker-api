@@ -1,4 +1,5 @@
-import {studentProfile, studentProgressTracker, pdSkillsPostData,  eduHomeworkData} from '../../db/fakeData';
+import {classAttendanceArray, studentProfile, studentProgressTracker, eduHomeworkData} from '../../db/fakeData';
+
 export const studentTracker = async (req, res) => {
   try {
     return res
@@ -18,6 +19,18 @@ export const getStudentProfile = async (req, res) => {
     .status(200)
     .send(filteredProfile) : res.json({success: false});
 
+  } catch (err) {
+    console.log(err);
+    return res.status(400).send("Could not get students");
+  }
+};
+
+
+export const postClassAttendanceData = async (req, res) => {
+  try {
+    let classAttendancePost = req.body;
+    classAttendanceArray.push(classAttendancePost);
+    res.json(classAttendancePost);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -53,4 +66,5 @@ export const postStudentEduHomework = async (req, res) => {
     res.status(400).send("Error adding homework!");
   }
 };
+
 
