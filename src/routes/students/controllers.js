@@ -66,4 +66,16 @@ export const postStudentEduHomework = async (req, res) => {
   }
 };
 
+export const postNewStudentProfile = async (req, res) => {
+  try {
+    const newStudentProfileBody = req.body;
+
+    newStudentProfileBody
+      ? (studentProfile.push(newStudentProfileBody),
+        res.status(200).json(newStudentProfileBody))
+      : res.send("Please add new student's profile!");
+  } catch (error) {
+    res.status(400).send("Error creating student profile!");
+  }
+}; 
 
