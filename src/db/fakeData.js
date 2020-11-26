@@ -25,50 +25,81 @@ export const users = [
   
       },
        overview: {
-          homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-          homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-          classessAttended: [1,2,3,4,5,6,7,8,9,10],
-          classessLate: [1,2,3,4,5,6,7,8,9,10]
+          'Homework Performance': [1,2,3,4,5,6,7,8,9,10],
+          'Missing Homework': ['yes', 'yes', 'yes', 'no'],
+          'Classes Attended': ['no', 'no', 'yes', 'late', 'no'],
+          'Classes Late': ['yes', 'no', 'late', 'no']
         },
       eduHomework: {
-         javascript1: {
-           week1: null,
-           week2: null,
-           week3: null
+        'Html/CSS': {
+          week1: 4,
+          week2: 6,
+          week3: 9
+        },
+        'JS Quiz 1': {
+          week1: 4,
+          week2: 6,
+          week3: 9
+        },
+         'Javascript 1': {
+           week1: 4,
+           week2: 6,
+           week3: 9
          },
-         javascript2: {
-          week1: null,
-          week2: null,
-          week3: null
+         'Javascript 2': {
+          week1: 5,
+          week2: 5,
+          week3: 6
         },
-        javascript3: {
-          week1: null,
-          week2: null,
-          week3: null
+        'Javascript 3': {
+          week1: 5,
+          week2: 6,
+          week3: 7
         },
-        studentScore: 0
+        PDSkills: {
+          'Communication': 'Very Good',
+          'Motivation': 'poor',
+          'Collaboration & Team Work': 'good',
+          'Resilience': null,
+          'Growth Mindset': null,
+          'Organisation': null,
+          'Attention to detail': null,
+          'Punctuality': null,
+          'Focus ': null,
+          'Language Proficiency': null,
+          'Self-confidence': null,
+          'Pro-active Learning': null
+      },
       },
 
       
       classAttendance: {
-        javascript1: {
-          week1: null,
-          week2: null,
-          week3: null
+        'HTML/CSS': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'yes'
         },
-        javascript2: {
-         week1: null,
-         week2: null,
-         week3: null
+        'JS Quizz 1': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'no'
+        },
+        'JavaScript 1': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'yes'
+        },
+        'JavaScript 2': {
+         week1: 'yes',
+         week2: 'yes',
+         week3: 'yes'
        },
-       javascript3: {
-         week1: null,
-         week2: null,
-         week3: null
-       },
-         
-     
-      }
+       'JavaScript 3': {
+         week1: 'yes',
+         week2: 'yes',
+         week3: 'yes'
+       }
+     }
     },
 
     {
@@ -81,68 +112,81 @@ export const users = [
             slackId: "lola321"
 
     },
-     overview: {
-        homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-        homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-        classessAttended: [1,2,3,4,5,6,7,8,9,10],
-        classessLate: [1,2,3,4,5,6,7,8,9,10]
-      },
-    eduHomework: {
-       javascript1: {
-         week1: null,
-         week2: null,
-         week3: null
-       },
-       javascript2: {
-        week1: null,
-        week2: null,
-        week3: null
-      },
-      javascript3: {
-        week1: null,
-        week2: null,
-        week3: null
-      },
-      studentScore: 0
-    },
+    overview: {
+      'Homeworks Performance': [6,3,6,6,5,6,6,6,10,10],
+      'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
+      'Classes Attended': ['no','no','yes', 'late','no'],
+      'Classes Late': ['yes', 'no', 'no', 'late']
+  },
 
-    
-    classAttendance: {
-      javascript1: {
+  eduHomework: {
+      'HTML/CSS': {
+        week1: 5,
+        week2: 6,
+        week3: 4
+      },
+      'JS Quizz 1': {
         week1: null,
         week2: null,
         week3: null
       },
-      javascript2: {
-       week1: null,
-       week2: null,
-       week3: null
-     },
-     javascript3: {
-       week1: null,
-       week2: null,
-       week3: null
-     },
-       
-     attended: {
-      0: 'yes', 
-      1: 'no', 
-      2: 'late'
-  }
+      'JavaScript 1': {
+        week1: null,
+        week2: null,
+        week3: null
       },
-    pdSkills: {
-        skill: {
-          0: "motivation", 
-          1: "communication", 
-          2:"confidence"
-        },
-        skillLevel: {
-          0: "Excellent", 
-          1: "Very good", 
-          2: "Average", 
-          3: "Below Average", 
-          4: "Poor"
-        }
+      'JavaScript 2': {
+       week1: null,
+       week2: null,
+       week3: 5
+     },
+     'JavaScript 3': {
+       week1: 3,
+       week2: 6,
+       week3: 7
+     }
+   },
+
+  PDSkills: {
+      'Communication': 'Very Good',
+      'Motivation': 'Good',
+      'Collaboration & Team Work': null,
+      'Resilience': null,
+      'Growth Mindset': null,
+      'Organisation': null,
+      'Attention to detail': null,
+      'Punctuality': 'Poor',
+      'Focus ': null,
+      'Language Proficiency': null,
+      'Self-confidence': null,
+      'Pro-active Learning': null
+  },
+  classAttendance: {
+      'HTML/CSS': {
+        week1: 'yes',
+        week2: 'yes',
+        week3: 'no'
+      },
+      'JS Quizz 1': {
+        week1: null,
+        week2: 'no',
+        week3: null
+      },
+      'JavaScript 1': {
+        week1: null,
+        week2: null,
+        week3: null
+      },
+      'JavaScript 2': {
+       week1: null,
+       week2: null,
+       week3: null
+     },
+     'JavaScript 3': {
+       week1: null,
+       week2: null,
+       week3: null
+     }
     }
   },
 
@@ -156,63 +200,83 @@ export const users = [
           slackId: "denis321"
 
   },
-   overview: {
-      homeworkPerformance: [1,2,3,4,5,6,7,8,9,10],
-      homeworkMissing: [1,2,3,4,5,6,7,8,9,10],
-      classessAttended: [1,2,3,4,5,6,7,8,9,10],
-      classessLate: [1,2,3,4,5,6,7,8,9,10]
-    },
-  eduHomework: {
-     javascript1: {
-       week1: null,
-       week2: null,
-       week3: null
-     },
-     javascript2: {
-      week1: null,
-      week2: null,
-      week3: null
-    },
-    javascript3: {
-      week1: null,
-      week2: null,
-      week3: null
-    }
-   
-  },
+  overview: {
+    'Homeworks Performance': [6,6,6,6,6,6,6,6,10,10],
+    'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
+    'Classes Attended': ['no','no','yes', 'late','no'],
+    'Classes Late': ['yes', 'no', 'late', 'no']
+},
 
-  
-  classAttendance: {
-    javascript1: {
+eduHomework: {
+    'HTML/CSS': {
+      week1: 7,
+      week2: 8,
+      week3: 9
+    },
+    'JS Quizz 1': {
       week1: null,
       week2: null,
       week3: null
     },
-    javascript2: {
+    'JavaScript 1': {
+      week1: null,
+      week2: null,
+      week3: null
+    },
+    'JavaScript 2': {
+     week1: null,
+     week2: null,
+     week3: 5
+   },
+   'JavaScript 3': {
+     week1: null,
+     week2: null,
+     week3: null
+   }
+ },
+
+PDSkills: {
+    'Communication': 'Very Good',
+    'Motivation': null,
+    'Collaboration & Team Work': 'Excellent',
+    'Resilience': null,
+    'Growth Mindset': null,
+    'Organisation': null,
+    'Attention to detail': null,
+    'Punctuality': null,
+    'Focus ': null,
+    'Language Proficiency': null,
+    'Self-confidence': null,
+    'Pro-active Learning': null
+},
+classAttendance: {
+    'HTML/CSS': {
+      week1: 'yes',
+      week2: 'no',
+      week3: 'no'
+    },
+    'JS Quizz 1': {
+      week1: null,
+      week2: 'no',
+      week3: null
+    },
+    'JavaScript 1': {
+      week1: null,
+      week2: null,
+      week3: null
+    },
+    'JavaScript 2': {
      week1: null,
      week2: null,
      week3: null
    },
-   javascript3: {
+   'JavaScript 3': {
      week1: null,
      week2: null,
      week3: null
-   },
-     
-   attended: {
-    0: 'yes', 
-    1: 'no', 
-    2: 'late'
+   }
 }
-    },
-
-   
-  pdSkills: {
-      skill: ["motivation", "communication", "confidence"],
-      skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-  }
-}
-    
+} 
     
   ]
   //route for /student-tracker
