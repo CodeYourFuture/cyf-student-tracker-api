@@ -84,17 +84,17 @@ export const users = [
           week2: 'no',
           week3: 'no'
         },
-        'JavaScript 1': {
+        'JavaScript_1': {
           week1: 'yes',
           week2: 'no',
           week3: 'yes'
         },
-        'JavaScript 2': {
+        'JavaScript_2': {
          week1: 'yes',
          week2: 'yes',
          week3: 'yes'
        },
-       'JavaScript 3': {
+       'JavaScript_3': {
          week1: 'yes',
          week2: 'yes',
          week3: 'yes'
@@ -167,22 +167,22 @@ export const users = [
         week2: 'yes',
         week3: 'no'
       },
-      'JS Quizz 1': {
+      'JS Quizz_1': {
         week1: null,
         week2: 'no',
         week3: null
       },
-      'JavaScript 1': {
-        week1: null,
+      'JavaScript_1': {
+        week1: 3,
         week2: null,
         week3: null
       },
-      'JavaScript 2': {
+      'JavaScript_2': {
        week1: null,
        week2: null,
        week3: null
      },
-     'JavaScript 3': {
+     'JavaScript_3': {
        week1: null,
        week2: null,
        week3: null
@@ -218,17 +218,17 @@ eduHomework: {
       week2: null,
       week3: null
     },
-    'JavaScript 1': {
-      week1: null,
+    'JavaScript_1': {
+      week1: 6,
       week2: null,
       week3: null
     },
-    'JavaScript 2': {
+    'JavaScript_2': {
      week1: null,
      week2: null,
      week3: 5
    },
-   'JavaScript 3': {
+   'JavaScript_3': {
      week1: null,
      week2: null,
      week3: null
@@ -320,9 +320,9 @@ classAttendance: {
       {
           classAttendance: {
             javascript1: {
-              week1: null,
-              week2: null,
-              week3: null
+              week1: 2,
+              week2: 5,
+              week3: 8
             },
             javascript2: {
              week1: null,

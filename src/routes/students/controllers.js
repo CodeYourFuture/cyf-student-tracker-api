@@ -29,8 +29,11 @@ export const getStudentProfile = async (req, res) => {
 export const postClassAttendanceData = async (req, res) => {
   try {
     let classAttendancePost = req.body;
+    let indexNum = classAttendancePost.profile;
     classAttendanceArray.push(classAttendancePost);
-    res.json(classAttendancePost);
+    studentProfile[indexNum - 1].classAttendance.JavaScript_1.week1 = classAttendanceArray[indexNum -1].attended;
+    let classPoint = studentProfile[indexNum - 1].classAttendance.JavaScript_1.week1;
+    res.status(200).json(studentProfile[indexNum - 1].classAttendance);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
