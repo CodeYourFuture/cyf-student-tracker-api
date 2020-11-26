@@ -4,7 +4,7 @@ export const studentTracker = async (req, res) => {
   try {
     return res
       .status(200)
-      .send(studentProgressTracker);
+      .send(studentProfile);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -62,12 +62,30 @@ export const postStudentEduHomework = async (req, res) => {
 
     eduHomeworkBody
       ? (eduHomeworkData.push(eduHomeworkBody),
-        res.json(eduHomeworkBody),
-        res.send("Homework added successfully"))
+        res.status(200).json(eduHomeworkBody))
       : res.send("Add student's educational homework");
   } catch (error) {
     res.status(400).send("Error adding homework!");
   }
 };
 
+export const postNewStudentProfile = async (req, res) => {
+  try {
+    const newStudentProfileBody = req.body;
 
+    newStudentProfileBody
+      ? (studentProfile.push(newStudentProfileBody),
+        res.status(200).json(newStudentProfileBody))
+      : res.send("Please add new student's profile!");
+  } catch (error) {
+    res.status(400).send("Error creating student profile!");
+  }
+}; 
+
+export const getUpdatedStudentProfile = async (req, res) => {
+  try {
+    res.json(studentProfile);
+  } catch (error) {
+    res.status(400).send("Error creating student profile!");
+  }
+}; 

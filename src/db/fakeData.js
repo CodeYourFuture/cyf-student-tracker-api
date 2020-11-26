@@ -15,65 +15,70 @@ export const users = [
  export const studentProfile = [
   
     {
-        profile: 1,
-        studentInfo: {
-              name: "Ekip",
-              location: "Birmingham",
-              email: "ekip123@yahoo.com",
-              phone: "07771112223",
-              slackId: "Ekip321"
+      profile: 1,
+      studentInfo: {
+            Name: "Ekip Kalir",
+            Location: "Birmingham",
+            Email: "ekip123@yahoo.com",
+            Phone: "07771112223",
+            SlackId: "Ekip321"
   
       },
-       overview: {
-          'Homework Performance': [1,2,3,4,5,6,7,8,9,10],
-          'Missing Homework': ['yes', 'yes', 'yes', 'no'],
-          'Classes Attended': ['no', 'no', 'yes', 'late', 'no'],
+
+
+      overview: {
+          'Homeworks Performance': [6,6,6,6,6,6,6,6,10,10],
+          'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
+          'Classes Attended': ['no','no','yes', 'late','no'],
           'Classes Late': ['yes', 'no', 'late', 'no']
-        },
+      },
+  
       eduHomework: {
-        'Html/CSS': {
-          week1: 4,
-          week2: 6,
-          week3: 9
-        },
-        'JS Quiz 1': {
-          week1: 4,
-          week2: 6,
-          week3: 9
-        },
-         'Javascript 1': {
-           week1: 4,
-           week2: 6,
-           week3: 9
+          'HTML/CSS': {
+            week1: 4,
+            week2: 5,
+            week3: 7
+          },
+          'JS Quizz 1': {
+            week1: 6,
+            week2: 7,
+            week3: 5
+          },
+          'JavaScript 1': {
+            week1: 3,
+            week2: 4,
+            week3: 4
+          },
+          'JavaScript 2': {
+           week1: 8,
+           week2: null,
+           week3: 5
          },
-         'Javascript 2': {
-          week1: 5,
-          week2: 5,
-          week3: 6
-        },
-        'Javascript 3': {
-          week1: 5,
-          week2: 6,
-          week3: 7
-        },
-        PDSkills: {
+         'JavaScript 3': {
+           week1: null,
+           week2: 7,
+           week3: null
+         }
+       },
+  
+      PDSkills: {
           'Communication': 'Very Good',
-          'Motivation': 'poor',
-          'Collaboration & Team Work': 'good',
+          'Motivation': null,
+          'Collaboration & Team Work': null,
           'Resilience': null,
           'Growth Mindset': null,
-          'Organisation': null,
+          'Organisation': 'Excellent',
+
           'Attention to detail': null,
           'Punctuality': null,
           'Focus ': null,
           'Language Proficiency': null,
           'Self-confidence': null,
           'Pro-active Learning': null
-      },
-      },
 
-      
+      },
       classAttendance: {
+
         'HTML/CSS': {
           week1: 'yes',
           week2: 'no',
@@ -100,11 +105,15 @@ export const users = [
          week3: 'yes'
        }
      }
+
+          
+
     },
 
     {
       profile: 2,
       studentInfo: {
+
             name: "lola",
             location: "Birmingham",
             email: "lola123@yahoo.com",
@@ -190,6 +199,9 @@ export const users = [
     }
   },
 
+
+            
+
   {
     profile: 3,
     studentInfo: {
@@ -209,26 +221,36 @@ export const users = [
 
 eduHomework: {
     'HTML/CSS': {
+
       week1: 7,
       week2: 8,
       week3: 9
+
+     
+
     },
     'JS Quizz 1': {
       week1: null,
       week2: null,
       week3: null
     },
+
     'JavaScript_1': {
       week1: 6,
       week2: null,
       week3: null
     },
     'JavaScript_2': {
+
+    
+
      week1: null,
      week2: null,
      week3: 5
    },
+
    'JavaScript_3': {
+
      week1: null,
      week2: null,
      week3: null
@@ -238,7 +260,11 @@ eduHomework: {
 PDSkills: {
     'Communication': 'Very Good',
     'Motivation': null,
+
     'Collaboration & Team Work': 'Excellent',
+
+  
+
     'Resilience': null,
     'Growth Mindset': null,
     'Organisation': null,
@@ -252,6 +278,7 @@ PDSkills: {
 classAttendance: {
     'HTML/CSS': {
       week1: 'yes',
+
       week2: 'no',
       week3: 'no'
     },
@@ -265,6 +292,7 @@ classAttendance: {
       week2: null,
       week3: null
     },
+
     'JavaScript 2': {
      week1: null,
      week2: null,
@@ -275,8 +303,10 @@ classAttendance: {
      week2: null,
      week3: null
    }
+
 }
 } 
+
     
   ]
   //route for /student-tracker
