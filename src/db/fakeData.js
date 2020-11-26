@@ -66,9 +66,27 @@ export const users = [
          week2: null,
          week3: null
        },
-         
+      attended: {
+      0: 'yes', 
+      1: 'no', 
+      2: 'late'
+  } 
      
-      }
+      },
+     PDSkills: {
+            'Communication': 'Very Good',
+            'Motivation': null,
+            'Collaboration & Team Work': null,
+            'Resilience': null,
+            'Growth Mindset': null,
+            'Organization': null,
+            'Attention to detail': null,
+            'Punctuality': null,
+            'Focus': null,
+            'Language Proficiency': null,
+            'Self-confidence': null,
+            'Pro-active Learning': null
+            }
     },
 
     {
@@ -130,20 +148,20 @@ export const users = [
       2: 'late'
   }
       },
-    pdSkills: {
-        skill: {
-          0: "motivation", 
-          1: "communication", 
-          2:"confidence"
-        },
-        skillLevel: {
-          0: "Excellent", 
-          1: "Very good", 
-          2: "Average", 
-          3: "Below Average", 
-          4: "Poor"
-        }
-    }
+     PDSkills: {
+            'Communication': 'Very Good',
+            'Motivation': null,
+            'Collaboration & Team Work': null,
+            'Resilience': null,
+            'Growth Mindset': null,
+            'Organization': null,
+            'Attention to detail': null,
+            'Punctuality': null,
+            'Focus ': null,
+            'Language Proficiency': null,
+            'Self-confidence': null,
+            'Pro-active Learning': null
+            }
   },
 
   {
@@ -207,10 +225,20 @@ export const users = [
     },
 
    
-  pdSkills: {
-      skill: ["motivation", "communication", "confidence"],
-      skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-  }
+  PDSkills: {
+            'Communication': 'Very Good',
+            'Motivation': null,
+            'Collaboration & Team Work': null,
+            'Resilience': null,
+            'Growth Mindset': null,
+            'Organization': null,
+            'Attention to detail': null,
+            'Punctuality': null,
+            'Focus ': null,
+            'Language Proficiency': null,
+            'Self-confidence': null,
+            'Pro-active Learning': null
+            }
 }
     
     
@@ -247,10 +275,20 @@ export const users = [
         }
       },
       {
-          pdSkills: {
-            skill: ["motivation", "communication", "confidence"],
-            skillLevel: ["Excellent", "Very good", "Average", "Below Average", "Poor"]
-        }
+          PDSkills: {
+            'Communication': 'Very Good',
+            'Motivation': null,
+            'Collaboration & Team Work': null,
+            'Resilience': null,
+            'Growth Mindset': null,
+            'Organization': null,
+            'Attention to detail': null,
+            'Punctuality': null,
+            'Focus ': null,
+            'Language Proficiency': null,
+            'Self-confidence': null,
+            'Pro-active Learning': null
+            }
       },
       
       {
