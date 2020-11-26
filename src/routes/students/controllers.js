@@ -4,7 +4,7 @@ export const studentTracker = async (req, res) => {
   try {
     return res
       .status(200)
-      .send(studentProgressTracker);
+      .send(studentProfile);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -79,3 +79,10 @@ export const postNewStudentProfile = async (req, res) => {
   }
 }; 
 
+export const getUpdatedStudentProfile = async (req, res) => {
+  try {
+    res.json(studentProfile);
+  } catch (error) {
+    res.status(400).send("Error creating student profile!");
+  }
+}; 
