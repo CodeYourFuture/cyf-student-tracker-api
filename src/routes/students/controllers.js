@@ -86,3 +86,17 @@ export const getUpdatedStudentProfile = async (req, res) => {
     res.status(400).send("Error creating student profile!");
   }
 }; 
+
+export const getUpdatedEduHomeworkData = async (req, res) => {
+  try {
+    const updatedEduHomework = req.body;
+    if (updatedEduHomework) {
+      eduHomeworkData.push(updatedEduHomework);
+      res.status(200).json(updatedEduHomework);
+    } else {
+      res.send("No new data in Educational Homework object; nothing to update!");
+    }
+  } catch (error) {
+    res.status(400).send("Error getting updated Educational Homework");
+  }
+};
