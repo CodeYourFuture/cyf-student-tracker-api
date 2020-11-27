@@ -5,7 +5,6 @@ import {
   getStudentProfile,
   postClassAttendanceData,
   postPdSkills,
-  postNewStudentProfile,
   getUpdatedStudentProfile,
   getStudentEduHomework,
   postEduHomework
@@ -18,7 +17,6 @@ router.get("/tracker", studentTracker);
 router.get("/profile/:profile_id", getStudentProfile);
 router.post("/Class-Attendance", postClassAttendanceData);
 router.post("/PD-Skills", postPdSkills);
-router.post("/student", postNewStudentProfile);
 router.get("/student_data", getUpdatedStudentProfile);
 router.get("/Edu-Homework", getStudentEduHomework);
 router.post("/Edu-Homework", postEduHomework);

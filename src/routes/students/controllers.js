@@ -2,9 +2,7 @@ import {classAttendanceArray, studentProfile, studentProgressTracker, edu} from 
 
 export const studentTracker = async (req, res) => {
   try {
-    return res
-      .status(200)
-      .send(studentProfile);
+    return res.status(200).send(studentProfile);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -15,10 +13,7 @@ export const getStudentProfile = async (req, res) => {
   try {
     let profileQuery = req.params.profile_id;
     let filteredProfile = studentProfile.find(el => el.profile == profileQuery);
-    filteredProfile ?  res
-    .status(200)
-    .send(filteredProfile) : res.json({success: false});
-
+    filteredProfile ?  res.status(200).send(filteredProfile) : res.json({success: false});
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -62,31 +57,14 @@ export const postEduHomework = async (req, res) => {
   try {
     let myEduPost = req.body;
     let indexNum = myEduPost.profile;
-
     edu.push(myEduPost);
-
     studentProfile[indexNum - 1].eduHomework.JavaScript_1.week1 = edu[indexNum -1].score;
-    let localPoint = studentProfile[indexNum - 1].eduHomework.JavaScript_1.week1;
     res.status(200).json(studentProfile[indexNum - 1].eduHomework);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
   }
 };
-
-
-export const postNewStudentProfile = async (req, res) => {
-  try {
-    const newStudentProfileBody = req.body;
-
-    newStudentProfileBody
-      ? (studentProfile.push(newStudentProfileBody),
-        res.status(200).json(newStudentProfileBody))
-      : res.send("Please add new student's profile!");
-  } catch (error) {
-    res.status(400).send("Error creating student profile!");
-  }
-}; 
 
 export const getUpdatedStudentProfile = async (req, res) => {
   try {
