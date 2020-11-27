@@ -7,7 +7,8 @@ import {
   postPdSkills,
   getUpdatedStudentProfile,
   getStudentEduHomework,
-  postEduHomework
+  postEduHomework, 
+  getPdSkills
 } from "./controllers";
 
 const router = express.Router();
@@ -16,6 +17,7 @@ const router = express.Router();
 router.get("/tracker", studentTracker);
 router.get("/profile/:profile_id", getStudentProfile);
 router.post("/Class-Attendance", postClassAttendanceData);
+router.get("/PD-Skills", getPdSkills);
 router.post("/PD-Skills", postPdSkills);
 router.get("/student_data", getUpdatedStudentProfile);
 router.get("/Edu-Homework", getStudentEduHomework);
