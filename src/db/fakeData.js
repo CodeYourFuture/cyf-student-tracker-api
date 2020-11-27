@@ -44,17 +44,17 @@ export const users = [
             week2: 7,
             week3: 5
           },
-          'JavaScript 1': {
+          'JavaScript_1': {
             week1: 3,
             week2: 4,
             week3: 4
           },
-          'JavaScript 2': {
+          'JavaScript_2': {
            week1: 8,
            week2: null,
            week3: 5
          },
-         'JavaScript 3': {
+         'JavaScript_3': {
            week1: null,
            week2: 7,
            week3: null
@@ -139,17 +139,17 @@ export const users = [
         week2: null,
         week3: null
       },
-      'JavaScript 1': {
+      'JavaScript_1': {
         week1: null,
         week2: null,
         week3: null
       },
-      'JavaScript 2': {
+      'JavaScript_2': {
        week1: null,
        week2: null,
        week3: 5
      },
-     'JavaScript 3': {
+     'JavaScript_3': {
        week1: 3,
        week2: 6,
        week3: 7
@@ -381,6 +381,6 @@ classAttendance: {
   
 export const pdSkillsPostData = [];
 
-export const eduHomeworkData = [];
+export const edu = [];
 
 export const classAttendanceArray = []; 

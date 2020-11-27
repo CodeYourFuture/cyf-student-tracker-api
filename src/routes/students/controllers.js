@@ -1,4 +1,4 @@
-import {classAttendanceArray, studentProfile, studentProgressTracker, eduHomeworkData} from '../../db/fakeData';
+import {classAttendanceArray, studentProfile, studentProgressTracker, edu} from '../../db/fakeData';
 
 export const studentTracker = async (req, res) => {
   try {
@@ -50,24 +50,30 @@ export const postPdSkills = async (req, res) => {
   }
 };
 
-export const postStudentEduHomework = async (req, res) => {
+export const getStudentEduHomework = async (req, res) => {
   try {
-    const eduHomeworkBody = req.body;
-    const findProfile = studentProfile.findIndex(
-      (profile) => profile.profile == eduHomeworkBody.studentId
-    );
-
-    studentProfile[findProfile].eduHomework = eduHomeworkBody.eduHomework;
-    console.log(eduHomeworkBody);
-
-    eduHomeworkBody
-      ? (eduHomeworkData.push(eduHomeworkBody),
-        res.status(200).json(eduHomeworkBody))
-      : res.send("Add student's educational homework");
+   res.json(studentProfile);
   } catch (error) {
-    res.status(400).send("Error adding homework!");
+    res.status(400).send("Error getting updated Educational Homework");
   }
 };
+
+export const postEduHomework = async (req, res) => {
+  try {
+    let myEduPost = req.body;
+    let indexNum = myEduPost.profile;
+
+    edu.push(myEduPost);
+
+    studentProfile[indexNum - 1].eduHomework.JavaScript_1.week1 = edu[indexNum -1].score;
+    let localPoint = studentProfile[indexNum - 1].eduHomework.JavaScript_1.week1;
+    res.status(200).json(studentProfile[indexNum - 1].eduHomework);
+  } catch (err) {
+    console.log(err);
+    return res.status(400).send("Could not get students");
+  }
+};
+
 
 export const postNewStudentProfile = async (req, res) => {
   try {
@@ -90,16 +96,3 @@ export const getUpdatedStudentProfile = async (req, res) => {
   }
 }; 
 
-export const postUpdatedEduHomeworkData = async (req, res) => {
-  try {
-    const updatedEduHomework = req.body;
-    if (updatedEduHomework) {
-      eduHomeworkData.push(updatedEduHomework);
-      res.status(200).json(updatedEduHomework);
-    } else {
-      res.send("No new data in Educational Homework object; nothing to update!");
-    }
-  } catch (error) {
-    res.status(400).send("Error getting updated Educational Homework");
-  }
-};
