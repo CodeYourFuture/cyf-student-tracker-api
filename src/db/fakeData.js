@@ -24,6 +24,8 @@ export const users = [
             SlackId: "Ekip321"
   
       },
+
+
       overview: {
           'Homeworks Performance': [6,6,6,6,6,6,6,6,10,10],
           'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
@@ -66,130 +68,140 @@ export const users = [
           'Resilience': null,
           'Growth Mindset': null,
           'Organisation': 'Excellent',
+
           'Attention to detail': null,
           'Punctuality': null,
           'Focus ': null,
           'Language Proficiency': null,
           'Self-confidence': null,
           'Pro-active Learning': null
+
       },
       classAttendance: {
-          'HTML/CSS': {
-            week1: 'yes',
-            week2: 'yes',
-            week3: 'yes'
-          },
-          'JS Quizz 1': {
-            week1: null,
-            week2: 'no',
-            week3: null
-          },
-          'JavaScript 1': {
-            week1: 'yes',
-            week2: null,
-            week3: 'no'
-          },
-          'JavaScript 2': {
-           week1: 'yes',
-           week2: null,
-           week3: 'no'
-         },
-         'JavaScript 3': {
-           week1: null,
-           week2: null,
-           week3: null
-         
-       } 
-      }
+
+        'HTML/CSS': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'yes'
+        },
+        'JS Quizz 1': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'no'
+        },
+        'JavaScript_1': {
+          week1: 'yes',
+          week2: 'no',
+          week3: 'yes'
+        },
+        'JavaScript_2': {
+         week1: 'yes',
+         week2: 'yes',
+         week3: 'yes'
+       },
+       'JavaScript_3': {
+         week1: 'yes',
+         week2: 'yes',
+         week3: 'yes'
+       }
+     }
+
+          
+
     },
 
     {
       profile: 2,
       studentInfo: {
-            Name: "Omolola Bello",
-            Location: "Birmingham",
-            Email: "Omolola@yahoo.com",
-            Phone: "07771112223",
-            SlackId: "Omolola"
-  
+
+            name: "lola",
+            location: "Birmingham",
+            email: "lola123@yahoo.com",
+            phone: "07771112223",
+            slackId: "lola321"
+
+    },
+    overview: {
+      'Homeworks Performance': [6,3,6,6,5,6,6,6,10,10],
+      'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
+      'Classes Attended': ['no','no','yes', 'late','no'],
+      'Classes Late': ['yes', 'no', 'no', 'late']
+  },
+
+  eduHomework: {
+      'HTML/CSS': {
+        week1: 5,
+        week2: 6,
+        week3: 4
       },
-      overview: {
-          'Homeworks Performance': [6,6,6,6,6,6,6,6,10,10],
-          'Missing Homeworks': ['yes', 'yes', 'yes', 'no'],
-          'Classes Attended': ['no','no','yes', 'late','no'],
-          'Classes Late': ['yes', 'no', 'late', 'no']
+      'JS Quizz 1': {
+        week1: null,
+        week2: null,
+        week3: null
       },
-  
-      eduHomework: {
-          'HTML/CSS': {
-            week1: 8,
-            week2: 3,
-            week3: 9
-          },
-          'JS Quizz 1': {
-            week1: null,
-            week2: null,
-            week3: null
-          },
-          'JavaScript 1': {
-            week1: null,
-            week2: null,
-            week3: null
-          },
-          'JavaScript 2': {
-           week1: null,
-           week2: null,
-           week3: 5
-         },
-         'JavaScript 3': {
-           week1: null,
-           week2: null,
-           week3: null
-         }
-       },
-  
-      PDSkills: {
-          'Communication': 'Very Good',
-          'Motivation': null,
-          'Collaboration & Team Work': null,
-          'Resilience': null,
-          'Growth Mindset': null,
-          'Organisation': null,
-          'Attention to detail': null,
-          'Punctuality': null,
-          'Focus ': null,
-          'Language Proficiency': null,
-          'Self-confidence': null,
-          'Pro-active Learning': null
+      'JavaScript 1': {
+        week1: null,
+        week2: null,
+        week3: null
       },
-      classAttendance: {
-          'HTML/CSS': {
-            week1: 'yes',
-            week2: null,
-            week3: 'yes'
-          },
-          'JS Quizz 1': {
-            week1: null,
-            week2: 'no',
-            week3: null
-          },
-          'JavaScript 1': {
-            week1: null,
-            week2: 'no',
-            week3: null
-          },
-          'JavaScript 2': {
-           week1: null,
-           week2: null,
-           week3: null
-         },
-         'JavaScript 3': {
-           week1: null,
-           week2: null,
-           week3: 'yes'
-         }
-       }
+      'JavaScript 2': {
+       week1: null,
+       week2: null,
+       week3: 5
+     },
+     'JavaScript 3': {
+       week1: 3,
+       week2: 6,
+       week3: 7
+     }
+   },
+
+  PDSkills: {
+      'Communication': 'Very Good',
+      'Motivation': 'Good',
+      'Collaboration & Team Work': null,
+      'Resilience': null,
+      'Growth Mindset': null,
+      'Organisation': null,
+      'Attention to detail': null,
+      'Punctuality': 'Poor',
+      'Focus ': null,
+      'Language Proficiency': null,
+      'Self-confidence': null,
+      'Pro-active Learning': null
+  },
+  classAttendance: {
+      'HTML/CSS': {
+        week1: 'yes',
+        week2: 'yes',
+        week3: 'no'
       },
+      'JS Quizz_1': {
+        week1: null,
+        week2: 'no',
+        week3: null
+      },
+      'JavaScript_1': {
+        week1: 3,
+        week2: null,
+        week3: null
+      },
+      'JavaScript_2': {
+       week1: null,
+       week2: null,
+       week3: null
+     },
+     'JavaScript_3': {
+       week1: null,
+       week2: null,
+       week3: null
+     }
+    }
+  },
+
+
+            
+
   {
     profile: 3,
     studentInfo: {
@@ -209,26 +221,36 @@ export const users = [
 
 eduHomework: {
     'HTML/CSS': {
-      week1: 4,
-      week2: 5,
-      week3: 6
+
+      week1: 7,
+      week2: 8,
+      week3: 9
+
+     
+
     },
     'JS Quizz 1': {
       week1: null,
       week2: null,
       week3: null
     },
-    'JavaScript 1': {
-      week1: null,
+
+    'JavaScript_1': {
+      week1: 6,
       week2: null,
       week3: null
     },
-    'JavaScript 2': {
+    'JavaScript_2': {
+
+    
+
      week1: null,
      week2: null,
      week3: 5
    },
-   'JavaScript 3': {
+
+   'JavaScript_3': {
+
      week1: null,
      week2: null,
      week3: null
@@ -238,7 +260,11 @@ eduHomework: {
 PDSkills: {
     'Communication': 'Very Good',
     'Motivation': null,
-    'Collaboration & Team Work': null,
+
+    'Collaboration & Team Work': 'Excellent',
+
+  
+
     'Resilience': null,
     'Growth Mindset': null,
     'Organisation': null,
@@ -252,8 +278,9 @@ PDSkills: {
 classAttendance: {
     'HTML/CSS': {
       week1: 'yes',
-      week2: null,
-      week3: null
+
+      week2: 'no',
+      week3: 'no'
     },
     'JS Quizz 1': {
       week1: null,
@@ -262,9 +289,10 @@ classAttendance: {
     },
     'JavaScript 1': {
       week1: null,
-      week2: 'yes',
+      week2: null,
       week3: null
     },
+
     'JavaScript 2': {
      week1: null,
      week2: null,
@@ -275,9 +303,10 @@ classAttendance: {
      week2: null,
      week3: null
    }
- }
+
 }
-    
+} 
+
     
   ]
   //route for /student-tracker
@@ -321,9 +350,9 @@ classAttendance: {
       {
           classAttendance: {
             javascript1: {
-              week1: null,
-              week2: null,
-              week3: null
+              week1: 2,
+              week2: 5,
+              week3: 8
             },
             javascript2: {
              week1: null,
