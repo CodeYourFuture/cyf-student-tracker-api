@@ -87,7 +87,7 @@ export const getUpdatedStudentProfile = async (req, res) => {
   }
 }; 
 
-export const getUpdatedEduHomeworkData = async (req, res) => {
+export const postUpdatedEduHomeworkData = async (req, res) => {
   try {
     const updatedEduHomework = req.body;
     if (updatedEduHomework) {
