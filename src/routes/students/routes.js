@@ -7,7 +7,8 @@ import {
   postPdSkills,
   postStudentEduHomework,
   postNewStudentProfile,
-  getUpdatedStudentProfile
+  getUpdatedStudentProfile,
+  postUpdatedEduHomeworkData,
 } from "./controllers";
 
 const router = express.Router();
@@ -20,5 +21,6 @@ router.post("/pd_skills", postPdSkills);
 router.post("/edu_homework", postStudentEduHomework);
 router.post("/student", postNewStudentProfile);
 router.get("/student_data", getUpdatedStudentProfile);
+router.post("/edu_homework", postUpdatedEduHomeworkData);
 
 export default router;
