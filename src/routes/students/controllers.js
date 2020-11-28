@@ -1,8 +1,27 @@
-import {classAttendanceArray, studentProfile, pdSkillsPostData, edu, pdData} from '../../db/fakeData';
+import {
+  classAttendanceArray, 
+  studentProfile, 
+  pdSkillsPostData, 
+  edu,
+  data, 
+  pdData, 
+  studentDD,
+  eduData,
+  studentData
+} from '../../db/fakeData';
 
 export const studentTracker = async (req, res) => {
   try {
-    return res.status(200).send(studentProfile);
+    return res.status(200).send(studentData);
+  } catch (err) {
+    console.log(err);
+    return res.status(400).send("Could not get students");
+  }
+};
+
+export const getClassAttendanceData = async (req, res) => {
+  try {
+   res.status(200).send(data);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
@@ -16,7 +35,7 @@ export const getStudentProfile = async (req, res) => {
     filteredProfile ?  res.status(200).send(filteredProfile) : res.json({success: false});
   } catch (err) {
     console.log(err);
-    return res.status(400).send("Could not get students");
+    return res.status(400).send("Could not get student with id:" + profileQuery );
   }
 };
 
@@ -27,13 +46,14 @@ export const postClassAttendanceData = async (req, res) => {
     let indexNum = classAttendancePost.profile;
     classAttendanceArray.push(classAttendancePost);
     studentProfile[indexNum - 1].classAttendance.JavaScript_1.week1 = classAttendanceArray[indexNum -1].attended;
-    let classPoint = studentProfile[indexNum - 1].classAttendance.JavaScript_1.week1;
+    //let classPoint = studentProfile[indexNum - 1].classAttendance.JavaScript_1.week1;
     res.status(200).json(studentProfile[indexNum - 1].classAttendance);
   } catch (err) {
     console.log(err);
     return res.status(400).send("Could not get students");
   }
 };
+
 export const getPdSkills = async (req, res) => {
   try {
     res.json(pdData);
@@ -55,7 +75,7 @@ export const postPdSkills = async (req, res) => {
 
 export const getStudentEduHomework = async (req, res) => {
   try {
-   res.json(studentProfile);
+   res.json(eduData);
   } catch (error) {
     res.status(400).send("Error getting updated Educational Homework");
   }
@@ -70,13 +90,13 @@ export const postEduHomework = async (req, res) => {
     res.status(200).json(studentProfile[indexNum - 1].eduHomework);
   } catch (err) {
     console.log(err);
-    return res.status(400).send("Could not get students");
+    return res.status(400).send("Could not post educational homework for student");
   }
 };
 
 export const getUpdatedStudentProfile = async (req, res) => {
   try {
-    res.json(studentProfile);
+    res.json(studentDD);
   } catch (error) {
     res.status(400).send("Error creating student profile!");
   }
