@@ -4,11 +4,12 @@ import {
   studentTracker,
   getStudentProfile,
   postClassAttendanceData,
+  getClassAttendanceData,
   postPdSkills,
-  postStudentEduHomework,
-  postNewStudentProfile,
   getUpdatedStudentProfile,
-  postUpdatedEduHomeworkData,
+  getStudentEduHomework,
+  postEduHomework, 
+  getPdSkills
 } from "./controllers";
 
 const router = express.Router();
@@ -16,11 +17,15 @@ const router = express.Router();
 // localhost:3001/students
 router.get("/tracker", studentTracker);
 router.get("/profile/:profile_id", getStudentProfile);
-router.post("/class_attendance", postClassAttendanceData);
-router.post("/pd_skills", postPdSkills);
-router.post("/edu_homework", postStudentEduHomework);
-router.post("/student", postNewStudentProfile);
+router.get("/Class-Attendance", getClassAttendanceData);
+router.post("/Class-Attendance", postClassAttendanceData);
+router.get("/PD-Skills", getPdSkills);
+router.post("/PD-Skills", postPdSkills);
 router.get("/student_data", getUpdatedStudentProfile);
-router.post("/edu_homework", postUpdatedEduHomeworkData);
+router.get("/Edu-Homework", getStudentEduHomework);
+router.post("/Edu-Homework", postEduHomework);
+
+
 
 export default router;
+
